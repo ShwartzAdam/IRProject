@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="248032cf-6212-41fd-b349-8ddc7c94b69b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Shenkar/IRProject/SEGui.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SerachEngine/Shenkar/IRProject/Controller$AddFileListener.class" afterPath="$PROJECT_DIR$/out/production/SerachEngine/Shenkar/IRProject/Controller$AddFileListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SerachEngine/Shenkar/IRProject/Controller$RemoveFileListener.class" afterPath="$PROJECT_DIR$/out/production/SerachEngine/Shenkar/IRProject/Controller$RemoveFileListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SerachEngine/Shenkar/IRProject/Controller$RunListener.class" afterPath="$PROJECT_DIR$/out/production/SerachEngine/Shenkar/IRProject/Controller$RunListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SerachEngine/Shenkar/IRProject/Controller.class" afterPath="$PROJECT_DIR$/out/production/SerachEngine/Shenkar/IRProject/Controller.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SerachEngine/Shenkar/IRProject/Document.class" afterPath="$PROJECT_DIR$/out/production/SerachEngine/Shenkar/IRProject/Document.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SerachEngine/Shenkar/IRProject/IndexTable.class" afterPath="$PROJECT_DIR$/out/production/SerachEngine/Shenkar/IRProject/IndexTable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SerachEngine/Shenkar/IRProject/SEGui$2.class" afterPath="$PROJECT_DIR$/out/production/SerachEngine/Shenkar/IRProject/SEGui$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SerachEngine/Shenkar/IRProject/SEGui$3.class" afterPath="$PROJECT_DIR$/out/production/SerachEngine/Shenkar/IRProject/SEGui$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SerachEngine/Shenkar/IRProject/SEGui$4.class" afterPath="$PROJECT_DIR$/out/production/SerachEngine/Shenkar/IRProject/SEGui$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SerachEngine/Shenkar/IRProject/SEGui$5.class" afterPath="$PROJECT_DIR$/out/production/SerachEngine/Shenkar/IRProject/SEGui$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SerachEngine/Shenkar/IRProject/SEGui.class" afterPath="$PROJECT_DIR$/out/production/SerachEngine/Shenkar/IRProject/SEGui.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SerachEngine.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,30 +33,16 @@
     <favorites_list name="SerachEngine" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.4078105">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Document.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Shenkar/IRProject/Document.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="22">
+                <state relative-caret-position="76">
                   <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="IndexTable.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Shenkar/IRProject/IndexTable.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="510">
-                  <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#166#187#0" expanded="true" />
-                    <element signature="e#229#237#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -57,7 +53,10 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="119">
                   <caret line="7" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-                  <folding />
+                  <folding>
+                    <element signature="e#134#135#0" expanded="true" />
+                    <element signature="e#169#170#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -69,25 +68,38 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SEGui.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="SEGui.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Shenkar/IRProject/SEGui.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="561">
-                  <caret line="96" column="56" selection-start-line="96" selection-start-column="56" selection-end-line="96" selection-end-column="56" />
+                <state relative-caret-position="-18">
+                  <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#1679#1880#0" expanded="true" />
                     <element signature="e#1879#1880#0" expanded="true" />
-                    <element signature="e#3851#3852#0" expanded="true" />
-                    <element signature="e#3898#3899#0" expanded="true" />
-                    <element signature="e#3941#3942#0" expanded="true" />
-                    <element signature="e#3981#3982#0" expanded="true" />
-                    <element signature="e#4196#4197#0" expanded="true" />
-                    <element signature="e#4252#4253#0" expanded="true" />
-                    <element signature="e#4316#4317#0" expanded="true" />
-                    <element signature="e#4378#4379#0" expanded="true" />
-                    <element signature="e#4413#4414#0" expanded="true" />
-                    <element signature="e#4444#4445#0" expanded="true" />
+                    <element signature="e#3886#3887#0" expanded="true" />
+                    <element signature="e#3929#3930#0" expanded="true" />
+                    <element signature="e#3969#3970#0" expanded="true" />
+                    <element signature="e#4184#4185#0" expanded="true" />
+                    <element signature="e#4240#4241#0" expanded="true" />
+                    <element signature="e#4304#4305#0" expanded="true" />
+                    <element signature="e#4366#4367#0" expanded="true" />
+                    <element signature="e#4401#4402#0" expanded="true" />
+                    <element signature="e#4432#4433#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="IndexTable.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Shenkar/IRProject/IndexTable.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="416">
+                  <caret line="148" column="19" selection-start-line="148" selection-start-column="19" selection-end-line="148" selection-end-column="19" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#390#411#0" expanded="true" />
+                    <element signature="e#453#461#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -96,8 +108,8 @@
           <file leaf-file-name="Stemmer.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Shenkar/IRProject/Stemmer.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+                <state relative-caret-position="203">
+                  <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
@@ -145,10 +157,12 @@
           <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Shenkar/IRProject/Controller.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="413">
-                  <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+                <state relative-caret-position="-32">
+                  <caret line="92" column="53" selection-start-line="92" selection-start-column="53" selection-end-line="92" selection-end-column="53" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#1331#1339#0" expanded="true" />
+                    <element signature="e#3180#3188#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -161,12 +175,14 @@
           <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Shenkar/IRProject/Controller.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+                <state relative-caret-position="487">
+                  <caret line="100" column="42" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="42" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#1125#1126#0" expanded="true" />
-                    <element signature="e#1163#1164#0" expanded="true" />
+                    <element signature="e#1145#1146#0" expanded="true" />
+                    <element signature="e#1183#1184#0" expanded="true" />
+                    <element signature="e#1331#1339#0" expanded="true" />
+                    <element signature="e#3180#3188#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -218,13 +234,13 @@
         <option value="$PROJECT_DIR$/src/Shenkar/IRProject/FileInfo.java" />
         <option value="$PROJECT_DIR$/articles/test.txt" />
         <option value="$PROJECT_DIR$/articles/test2.txt" />
-        <option value="$PROJECT_DIR$/src/Shenkar/IRProject/Document.java" />
         <option value="$PROJECT_DIR$/src/Shenkar/IRProject/Main.java" />
-        <option value="$PROJECT_DIR$/src/Shenkar/IRProject/Controller.java" />
         <option value="$PROJECT_DIR$/src/Shenkar/IRProject/Stemmer.java" />
         <option value="$PROJECT_DIR$/src/Shenkar/IRProject/SEGui.form" />
-        <option value="$PROJECT_DIR$/src/Shenkar/IRProject/IndexTable.java" />
         <option value="$PROJECT_DIR$/src/Shenkar/IRProject/SEGui.java" />
+        <option value="$PROJECT_DIR$/src/Shenkar/IRProject/Document.java" />
+        <option value="$PROJECT_DIR$/src/Shenkar/IRProject/Controller.java" />
+        <option value="$PROJECT_DIR$/src/Shenkar/IRProject/IndexTable.java" />
       </list>
     </option>
   </component>
@@ -713,30 +729,38 @@
       <option name="presentableId" value="Default" />
       <updated>1477478815670</updated>
     </task>
+    <task id="LOCAL-00001" summary="Update 1">
+      <created>1478279387582</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1478279387582</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27621722" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27621722" sideWeight="0.5125" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27621722" sideWeight="0.4875" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18645833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37734082" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37734082" sideWeight="0.48958334" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -757,7 +781,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Update 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -772,7 +797,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="122" />
+      <option name="time" value="127" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -787,8 +812,8 @@
           <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#166#187#0" expanded="true" />
-            <element signature="e#229#237#0" expanded="true" />
+            <element signature="e#390#411#0" expanded="true" />
+            <element signature="e#453#461#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -797,7 +822,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-          <folding />
+          <folding>
+            <element signature="e#134#135#0" expanded="true" />
+            <element signature="e#169#170#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -820,16 +848,15 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1679#1880#0" expanded="true" />
             <element signature="e#1879#1880#0" expanded="true" />
-            <element signature="e#3851#3852#0" expanded="true" />
-            <element signature="e#3898#3899#0" expanded="true" />
-            <element signature="e#3941#3942#0" expanded="true" />
-            <element signature="e#3981#3982#0" expanded="true" />
-            <element signature="e#4196#4197#0" expanded="true" />
-            <element signature="e#4252#4253#0" expanded="true" />
-            <element signature="e#4316#4317#0" expanded="true" />
-            <element signature="e#4378#4379#0" expanded="true" />
-            <element signature="e#4413#4414#0" expanded="true" />
-            <element signature="e#4444#4445#0" expanded="true" />
+            <element signature="e#3886#3887#0" expanded="true" />
+            <element signature="e#3929#3930#0" expanded="true" />
+            <element signature="e#3969#3970#0" expanded="true" />
+            <element signature="e#4184#4185#0" expanded="true" />
+            <element signature="e#4240#4241#0" expanded="true" />
+            <element signature="e#4304#4305#0" expanded="true" />
+            <element signature="e#4366#4367#0" expanded="true" />
+            <element signature="e#4401#4402#0" expanded="true" />
+            <element signature="e#4432#4433#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -868,8 +895,8 @@
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#166#187#0" expanded="true" />
-            <element signature="e#229#237#0" expanded="true" />
+            <element signature="e#390#411#0" expanded="true" />
+            <element signature="e#453#461#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -901,16 +928,15 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1679#1880#0" expanded="true" />
             <element signature="e#1879#1880#0" expanded="true" />
-            <element signature="e#3851#3852#0" expanded="true" />
-            <element signature="e#3898#3899#0" expanded="true" />
-            <element signature="e#3941#3942#0" expanded="true" />
-            <element signature="e#3981#3982#0" expanded="true" />
-            <element signature="e#4196#4197#0" expanded="true" />
-            <element signature="e#4252#4253#0" expanded="true" />
-            <element signature="e#4316#4317#0" expanded="true" />
-            <element signature="e#4378#4379#0" expanded="true" />
-            <element signature="e#4413#4414#0" expanded="true" />
-            <element signature="e#4444#4445#0" expanded="true" />
+            <element signature="e#3886#3887#0" expanded="true" />
+            <element signature="e#3929#3930#0" expanded="true" />
+            <element signature="e#3969#3970#0" expanded="true" />
+            <element signature="e#4184#4185#0" expanded="true" />
+            <element signature="e#4240#4241#0" expanded="true" />
+            <element signature="e#4304#4305#0" expanded="true" />
+            <element signature="e#4366#4367#0" expanded="true" />
+            <element signature="e#4401#4402#0" expanded="true" />
+            <element signature="e#4432#4433#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -981,20 +1007,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shenkar/IRProject/Document.java">
+    <entry file="file://$PROJECT_DIR$/src/Shenkar/IRProject/SEController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shenkar/IRProject/Library.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="170">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1009,23 +1025,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shenkar/IRProject/Stemmer.java">
+    <entry file="file://$PROJECT_DIR$/src/Shenkar/IRProject/Library.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="119">
+          <caret line="7" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#134#135#0" expanded="true" />
+            <element signature="e#169#170#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shenkar/IRProject/IndexTable.java">
+    <entry file="file://$PROJECT_DIR$/src/Shenkar/IRProject/SEGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+        <state relative-caret-position="-18">
+          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#166#187#0" expanded="true" />
-            <element signature="e#229#237#0" expanded="true" />
+            <element signature="e#1679#1880#0" expanded="true" />
+            <element signature="e#1879#1880#0" expanded="true" />
+            <element signature="e#3886#3887#0" expanded="true" />
+            <element signature="e#3929#3930#0" expanded="true" />
+            <element signature="e#3969#3970#0" expanded="true" />
+            <element signature="e#4184#4185#0" expanded="true" />
+            <element signature="e#4240#4241#0" expanded="true" />
+            <element signature="e#4304#4305#0" expanded="true" />
+            <element signature="e#4366#4367#0" expanded="true" />
+            <element signature="e#4401#4402#0" expanded="true" />
+            <element signature="e#4432#4433#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Shenkar/IRProject/Stemmer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1034,42 +1070,36 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shenkar/IRProject/SEController.java">
+    <entry file="file://$PROJECT_DIR$/src/Shenkar/IRProject/Document.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shenkar/IRProject/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        <state relative-caret-position="76">
+          <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shenkar/IRProject/SEGui.java">
+    <entry file="file://$PROJECT_DIR$/src/Shenkar/IRProject/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="96" column="56" selection-start-line="96" selection-start-column="56" selection-end-line="96" selection-end-column="56" />
+        <state relative-caret-position="-32">
+          <caret line="92" column="53" selection-start-line="92" selection-start-column="53" selection-end-line="92" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1679#1880#0" expanded="true" />
-            <element signature="e#1879#1880#0" expanded="true" />
-            <element signature="e#3851#3852#0" expanded="true" />
-            <element signature="e#3898#3899#0" expanded="true" />
-            <element signature="e#3941#3942#0" expanded="true" />
-            <element signature="e#3981#3982#0" expanded="true" />
-            <element signature="e#4196#4197#0" expanded="true" />
-            <element signature="e#4252#4253#0" expanded="true" />
-            <element signature="e#4316#4317#0" expanded="true" />
-            <element signature="e#4378#4379#0" expanded="true" />
-            <element signature="e#4413#4414#0" expanded="true" />
-            <element signature="e#4444#4445#0" expanded="true" />
+            <element signature="e#1331#1339#0" expanded="true" />
+            <element signature="e#3180#3188#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Shenkar/IRProject/IndexTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="148" column="19" selection-start-line="148" selection-start-column="19" selection-end-line="148" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#390#411#0" expanded="true" />
+            <element signature="e#453#461#0" expanded="true" />
           </folding>
         </state>
       </provider>
