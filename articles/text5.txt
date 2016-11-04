@@ -1,0 +1,48 @@
+Author: Gray, C.W.; McDowell, R.W.; Carrick, S.; Thomas, S.
+published: 10/10/2016
+
+
+
+• The application of urine reduced the amount of P loss from soil.
+
+• Increasing the rate of irrigation did not affect the load of P lost from soil.
+
+• Phosphorus concentrations exceeded guidelines for good surface water quality.
+
+Diffuse losses of phosphorus (P) from agricultural land via subsurface flow (viz leaching)
+
+can result in degradation of surface water quality. Factors such as irrigation and soil pH can increase
+
+the solubility of P and its subsequent loss to water. Urine patches are known to alter pH by up to 3 units,
+
+but it is unknown if this increases P loss. This study investigated subsurface P loss from a stony soil
+
+subjected to different rates of irrigation (12, 25, 50mmh−1) with or without the application of urine (600kgNha−1),
+
+a typical N loading rate under a cattle urine patch, using intact lysimeters. Results showed that despite receiving urine,
+
+average total P (TP), filtered reactive P (FRP) and filtered unreactive P (FURP) concentrations were significantly
+
+(P<0.05) lower (27, 3, 7μgL−1) than non-urine treatments (40, 8, 11μgL−1). Increasing the rate (not amount)
+
+of irrigation did not affect the load of P lost. Total P loads were generally low (0.070–0.167kgha−1)
+
+compared to other studies where P loss has been measured in drainage from pasture soils after P fertiliser application.
+
+The lack of differences observed with increasing irrigation rates was thought to be due to attenuation as
+
+P moved from preferential flow pathways in the topsoil to matrix flow in the subsoil gravels.
+
+The lower P losses following urine application were due to: 1) the buffering effect of the soil
+
+negating any significant pH-induced solubilisation of P; and 2) enhanced P uptake and decreased
+
+drainage (due to greater evapotranspiration) as dry matter production increased in response to the nitrogen applied in urine.
+
+However, despite this soil having only a moderate Olsen P concentration, typical of productive landuses in the region,
+
+FRP and TP concentrations still exceeded guidelines for good surface water quality.
+
+Strategies should be considered to decrease these losses, especially where drainage occurs via preferential
+
+flow pathways that negate attenuation of P losses, or are well connected to surface waters such as using precision irrigation.

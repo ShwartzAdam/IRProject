@@ -1,0 +1,58 @@
+Author: Rodenburg, Jonne; Demont, Matty; Zwart, Sander J.; Bastiaans, Lammert
+published: 6/6/2016
+
+
+
+• Striga spp. occur in at least 31 countries with rain-fed upland rice systems.
+
+• Rhamphicarpa fistulosa threatens rice production in at least 28 countries.
+
+• 1.34 million ha of rain-fed rice is infested with parasitic weeds in Africa.
+
+• Economic losses inflicted by parasitic weeds most likely reaches US $200M.
+
+• Parasitic weed inflicted losses are estimated to increase by US $30M annually.Parasitic weeds pose increasing threads to rain-fed rice production in Africa.
+
+ Most important species are Striga asiatica, S. aspera and S. hermonthica in rain-fed uplands, and Rhamphicarpa fistulosa in rain-fed lowlands.
+
+ Information on the regional spread and economic importance of parasitic weeds in rice production systems is scant.
+
+ This article presents the first multi-species, multi-country, single-crop impact assessment of parasitic weeds in Africa.
+
+ A systematic search of public international and national herbaria and the scientific literature was conducted to collect all
+
+ available data on the regional distribution, incidences and related yield losses of the most important parasitic weeds in rice.
+
+ Herbaria specimens were geo-referenced and these coordinates were overlapped with rain-fed rice areas.
+
+ Probabilistic diffusion waves of parasitic weeds were generated to derive most likely incidence values.
+
+ Estimates from this spatial analysis were then combined with secondary data from the literature into a
+
+ stochastic impact assessment model to generate a confidence interval of the likely economic impact
+
+ per country and for sub-Saharan Africa as a whole. Rhamphicarpa fistulosa occurs in at least
+
+ 36 African countries, 28 of which produce rice in rain-fed lowlands where this species thrives.
+
+ Striga hermonthica is found in at least 32 countries, Striga asiatica in at least 44 and
+
+ S. aspera in at least 17. A total of 50 countries have at least one of these three species of Striga,
+
+ 31 of which produce rice in the rain-fed uplands where these species can be encountered.
+
+ An estimated 1.34 million ha of rain-fed rice is infested with at least one species of a parasitic
+
+ weed in Africa. Our stochastic model estimates that annual economic losses inflicted by
+
+ all parasitic weeds exceeds with 95% certainty a minimum value of US $111 million and most likely
+
+ reaches roughly US $200 million and increases by US $30 million annually. To reverse this trend and
+
+ support small-holder rice farmers in Africa with effective, sustainable and affordable solutions for control,
+
+ targeted investments in research, development and capacity building are required.
+
+ The top-10 priority countries where such investments would probably have the highest
+
+ return are Nigeria, Guinea, Mali, Cote d’Ivoire, Cameroon, Tanzania, Madagascar, Uganda, Sierra Leone and Burkina Faso.
