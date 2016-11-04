@@ -53,8 +53,8 @@ public class IndexTable implements Serializable{
             for (String _word : line.split("\\W+"))
             {
                 if(_word.equals("")) continue;
-                words.add(_word);
                 _word=_word.toLowerCase();
+                words.add(_word);
                 stemmer.add(_word);
                 pos++;
                 if (stopwords.contains(_word))
