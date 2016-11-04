@@ -28,7 +28,6 @@ public class Document {
     private String desc;
     private String headline;
     private String published;
-    private boolean isHide;
 
     public Document(File f, int id) throws IOException {
         data=new Vector<>();
@@ -43,7 +42,7 @@ public class Document {
 
     public String toString() {
         return "<HTML>"
-                +"<body style='width: 50%;border-bottom:2px solid; border-color:brown;'>"
+                +"<body style='width: 50%;border-bottom:2px solid black;'>"
                 + "<B>Doc name :</B> " +name + " <BR> <B>Author: </B>"+ author +"<BR> <B> Description:</B> " + desc + "<BR>"+ published +"<BR> <B> Published:</B> ";
     }
 

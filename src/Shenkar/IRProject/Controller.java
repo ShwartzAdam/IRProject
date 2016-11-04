@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
+import java.util.*;
 
 /**
  * Created by Almog on 03-Nov-16.
@@ -42,6 +43,28 @@ public class Controller {
         index=new IndexTable();
     }
 
+    private List<String> ParssQuery(String query)
+    {
+        String[] splitted = query.split(" ");
+        List<String> parsed = new ArrayList<String>();
+        int index = 1;
+        for (String token : splitted) {
+            if(token.equals("AND") || token.equals("OR") || token.equals("NOT"))
+            {
+                parsed.add("1"); //  1 - symbol Oper
+            }
+            else if(token.equals("Quotation"))
+            {
+                parsed.add("2");  // 2 - symbol quot
+            }
+            else{
+                parsed.add("3");  // 3 - word
+            }
+        }
+        System.out.println(parsed);
+        return parsed;
+    }
+
     private class AddFileListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
@@ -65,17 +88,37 @@ public class Controller {
         @Override
         public void actionPerformed(ActionEvent e) {
 
+            // delete -> hide in every DOC by setting the field boolean of isHide to
+            // TRUE , by transformation file name to ID file in the
+            // IndexTable and loop on every Term and ID scanning .
+
         }
     }
 
     private class RunListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            String word=gui.getQuery();
+            String query = gui.getQuery();
+            List<String> parsed = new ArrayList<String>();
+            parsed = ParssQuery(query);
+
+            int len = parsed.size();
+            if(len < 2)gui.setAnswer(index.searchSingle(query));
+            else{
+                    //gui.setAnswer(index.analyseQuery(parsed,query));
+                    // need to change the function search so it will know what to the with oper
+            }
+
+            // if the query len is less then two -> search for only
+            // the word in case they are words of course.
+            // need to understand the query
+
+            /*
             if(!word.isEmpty())
             {
                 gui.setAnswer(index.search(word));
             }
+            */
 
         }
     }

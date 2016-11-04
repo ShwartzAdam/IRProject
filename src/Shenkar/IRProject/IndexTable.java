@@ -6,6 +6,17 @@ import java.util.*;
 
 public class IndexTable implements Serializable{
 
+    private class Tuple {
+        private int fileno;
+        private int position;
+
+        public Tuple(int fileno, int position) {
+            this.fileno = fileno;
+            this.position = position;
+        }
+    }
+
+
     Map<String, List<Tuple>> index = new HashMap<String, List<Tuple>>();
     List<String> files = new ArrayList<String>(); // the original list files
     Stemmer stemmer;
@@ -26,15 +37,7 @@ public class IndexTable implements Serializable{
             "what", "when", "where", "which", "while", "who", "whom", "why",
             "will", "with", "would", "yet", "you", "your");
 
-    private class Tuple {
-        private int fileno;
-        private int position;
 
-        public Tuple(int fileno, int position) {
-            this.fileno = fileno;
-            this.position = position;
-        }
-    }
 
     public void indexFile(File file) throws IOException {
         stemmer=new Stemmer();
@@ -84,11 +87,15 @@ public class IndexTable implements Serializable{
 
     }
 
-    public String search(String word) {
+    public String searchSingle(String word) {
+        // stem the word to its stemming form.
         stemmer=new Stemmer();
+        // convert to lowercase the word
         word=word.toLowerCase();
+        // prepare the stem class for a word and change it.
         stemmer.add(word);
         stemmer.stem();
+        //
         List<Tuple> idx = index.get(stemmer.toString());
         String res="<html>";
         if (idx != null)
@@ -101,14 +108,51 @@ public class IndexTable implements Serializable{
                     res+=(d.printContext(t.position-1))+"<br><br>";
                 }
 
-                }
-                res+="</html>";
+            }
+            res+="</html>";
         }
         else
         {
             res="No resutls";
         }
         return res;
+    }
+
+    public ArrayList search(String word) {
+        // stem the word to its stemming form.
+        stemmer=new Stemmer();
+        // convert to lowercase the word
+        word=word.toLowerCase();
+        // prepare the stem class for a word and change it.
+        stemmer.add(word);
+        stemmer.stem();
+        //
+        List<Tuple> idx = index.get(stemmer.toString());
+        String res="<html>";
+        if (idx != null)
+        {
+            for (Tuple t : idx)
+            {
+                Document d=lib.docs.get(t.fileno);
+                if(d.data.get(t.position-1).equals(word))
+                {
+                    res+=(d.printContext(t.position-1))+"<br><br>";
+                }
+
+            }
+            res+="</html>";
+        }
+        else
+        {
+            res="No resutls";
+        }
+        return null;
+    }
+
+    public String analyseQuery(List<String> parsed, String query)
+    {
+
+        return null;
     }
 
 

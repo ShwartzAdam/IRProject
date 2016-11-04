@@ -63,38 +63,38 @@ public class SEGui extends JFrame {
         andButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-               String str =  e.getActionCommand().toString();
+                String str = e.getActionCommand().toString();
                 System.out.println(str);
                 String appended_text = queryTextField.getText();
-                queryTextField.setText(appended_text + " " + str + " ");
+                queryTextField.setText(appended_text +  str + " ");
 
             }
         });
         orButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String str =  e.getActionCommand().toString();
+                String str = e.getActionCommand().toString();
                 System.out.println(str);
                 String appended_text = queryTextField.getText();
-                queryTextField.setText(appended_text + " " + str + " ");
+                queryTextField.setText(appended_text + str + " ");
             }
         });
         notButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String str =  e.getActionCommand().toString();
+                String str = e.getActionCommand().toString();
                 System.out.println(str);
                 String appended_text = queryTextField.getText();
-                queryTextField.setText(appended_text + " " + str + " ");
+                queryTextField.setText(appended_text  + str + " ");
             }
         });
         qoutButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String str =  e.getActionCommand().toString();
+                String str = e.getActionCommand().toString();
                 System.out.println(str);
                 String appended_text = queryTextField.getText();
-                queryTextField.setText(appended_text + "\"");
+                queryTextField.setText(appended_text + "Quotation");
             }
         });
         cleanButton.addActionListener(new ActionListener() {

@@ -90,7 +90,7 @@
               </grid>
             </constraints>
             <properties>
-              <text value="&quot;Quotation&quot;"/>
+              <text value="Quotation"/>
             </properties>
           </component>
           <component id="cc024" class="javax.swing.JButton" binding="cleanButton" default-binding="true">
