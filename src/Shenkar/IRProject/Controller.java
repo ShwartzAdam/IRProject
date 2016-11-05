@@ -49,16 +49,24 @@ public class Controller {
         List<String> parsed = new ArrayList<String>();
         int index = 1;
         for (String token : splitted) {
-            if(token.equals("AND") || token.equals("OR") || token.equals("NOT"))
+            if(token.equals("AND"))
             {
-                parsed.add("1"); //  1 - symbol Oper
+                parsed.add("1"); //  1 - AND
             }
-            else if(token.equals("Quotation"))
+            else if(token.equals("OR"))
             {
-                parsed.add("2");  // 2 - symbol quot
+                parsed.add("2"); // 2 - OR
             }
-            else{
-                parsed.add("3");  // 3 - word
+            else if(token.equals("NOT"))
+            {
+                parsed.add("3");  // 3 - NOT
+            }
+            else if (token.equals("Quotation"))
+            {
+                parsed.add("4");  // 4 - QUOT
+            }
+            else {
+                parsed.add("5"); // 5 - Word
             }
         }
         System.out.println(parsed);
@@ -105,7 +113,7 @@ public class Controller {
             int len = parsed.size();
             if(len < 2)gui.setAnswer(index.searchSingle(query));
             else{
-                    //gui.setAnswer(index.analyseQuery(parsed,query));
+                    gui.setAnswer(index.analyseQuery(parsed,query));
                     // need to change the function search so it will know what to the with oper
             }
 
