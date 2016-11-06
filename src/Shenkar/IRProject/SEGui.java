@@ -103,10 +103,20 @@ public class SEGui extends JFrame {
                 String str = e.getActionCommand().toString();
                 System.out.println(str);
                 queryTextField.setText("");
+                ansPanel.setText("");
             }
         });
+        aboutButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(rootPanel,
+                        "This app created as a final project of IR course, for more information \n" +
+                                "contact us\n at adam@shwartz.co almogassu@gmail.com\n",
+                        "IR SEARCH by Adam and Almog",
+                        JOptionPane.PLAIN_MESSAGE);
+                }
+        });
     }
-
 
     public String getQuery()
     {
@@ -131,11 +141,6 @@ public class SEGui extends JFrame {
     {
         removeFileButton.addActionListener(removeFile);
     }
-
-    public String getFilename() {
-        return fileName;
-    }
-
 
 
 

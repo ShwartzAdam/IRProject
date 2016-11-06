@@ -49,8 +49,8 @@ public class Controller {
             JFileChooser chooser=new JFileChooser("./");
             chooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
             if(chooser.showOpenDialog(null)== JFileChooser.APPROVE_OPTION);
-            String name =chooser.getSelectedFile().getName();
             try {
+                String name =chooser.getSelectedFile().getName();
                 if(chooser.getSelectedFile().isFile())
                     index.indexFile(chooser.getSelectedFile());
                 else
