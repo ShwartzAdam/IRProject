@@ -107,15 +107,18 @@ public class Controller {
         @Override
         public void actionPerformed(ActionEvent e) {
             String query = gui.getQuery();
-            List<String> parsed = new ArrayList<String>();
-            parsed = ParssQuery(query);
 
-            int len = parsed.size();
-            if(len < 2)gui.setAnswer(index.searchSingle(query));
-            else{
-                    gui.setAnswer(index.analyseQuery(parsed,query));
-                    // need to change the function search so it will know what to the with oper
-            }
+            List<String> parsed = new ArrayList<String>();
+
+            parsed = ParssQuery(query);
+            gui.setAnswer(index.analyseQuery(parsed,query));
+
+            // " A
+            // A
+            // A && B || C
+
+            // need to change the function search so it will know what to the with oper
+
 
             // if the query len is less then two -> search for only
             // the word in case they are words of course.

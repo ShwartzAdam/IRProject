@@ -92,6 +92,43 @@ public class IndexTable implements Serializable{
 
     }
 
+    public String searchAsItIs(String word) {
+        // stem the word to its stemming form.
+        stemmer=new Stemmer();
+        // convert to lowercase the word
+        word=word.toLowerCase();
+        // prepare the stem class for a word and change it.
+        stemmer.add(word);
+        stemmer.stem();
+        //
+        List<Integer> results = new ArrayList<>();
+        List<Tuple> idx = index.get(stemmer.toString());
+        String res="<html>";
+        if (idx != null)
+        {
+            for (Tuple t : idx)
+            {
+                Document d=lib.docs.get(t.fileno);
+
+                if(d.data.get(t.position-1).equals(word))
+                {
+                //results.add(d.getId(),t.position-1);
+
+                System.out.println(d.data.get(t.position-1).toString());
+                res+=(d.printContext(t.position-1))+"<br><br>";
+                }
+
+            }
+            res+="</html>";
+        }
+        else
+        {
+            res="No resutls";
+        }
+        return res;
+    }
+
+
     public String searchSingle(String word) {
         // stem the word to its stemming form.
         stemmer=new Stemmer();
@@ -109,13 +146,14 @@ public class IndexTable implements Serializable{
             for (Tuple t : idx)
             {
                 Document d=lib.docs.get(t.fileno);
-                if(d.data.get(t.position-1).equals(word))
-                {
-                    //results.add(d.getId(),t.position-1);
-                    System.out.println(d.data.get(t.position-1).toString());
 
+                //if(d.data.get(t.position-1).equals(word))
+                //{
+                    //results.add(d.getId(),t.position-1);
+
+                    System.out.println(d.data.get(t.position-1).toString());
                     res+=(d.printContext(t.position-1))+"<br><br>";
-                }
+                //}
 
             }
             res+="</html>";
@@ -127,7 +165,7 @@ public class IndexTable implements Serializable{
         return res;
     }
 
-    public ArrayList search(String word) {
+    public ArrayList searchDocApp(String word) {
         // stem the word to its stemming form.
         stemmer=new Stemmer();
         // convert to lowercase the word
@@ -158,108 +196,189 @@ public class IndexTable implements Serializable{
         return res;
 
     }
+    public ArrayList searchDocAppQout(String word) {
+        // stem the word to its stemming form.
+        stemmer=new Stemmer();
+        // convert to lowercase the word
+        word=word.toLowerCase();
+        // prepare the stem class for a word and change it.
+        stemmer.add(word);
+        stemmer.stem();
+        //return where is word
+        List<Tuple> idx = index.get(stemmer.toString());
+        ArrayList res = new ArrayList(lib.docs.size());
+        int len = 0;
+        while (len != lib.docs.size())
+        {
+            res.add(len,0);
+            len++;
+        }
+        // adding all apperance of the word to Arraylist of interger
+
+        if (idx != null) {
+            for (Tuple t : idx) {
+                Document d = lib.docs.get(t.fileno);
+                if (d.data.get(t.position - 1).equals(word)) {
+                res.set(t.getFileNum(),1);
+                 }
+            }
+        }
+
+        return res;
+
+    }
 
     public String analyseQuery(List<String> parsed, String query)
     {
-        Map<Integer,ArrayList> result = new HashMap<Integer,ArrayList>();
-        String[] splitted = query.split(" ");
-        int loc = 0;
-        for(String token : splitted)
-        {
-            result.put(loc,new ArrayList());
-            loc ++;
-        }
-
-        // the results will held in VECTOR of WORD -> 0 - 1 (true)
-        //                                            1 - 1 (true)
-        //                                            2 - 0 (true)
-
-        // take the first three if the third is NOT take also the forth.
-        
-        // NOT then AND and then OR
-
-        int sizeofDocs = lib.docs.size();
+        int size = parsed.size();
         int indexOfOper = 0;
         int indexOfWord = 0;
-        for(String str:parsed)
+        String[] splitted = query.split(" ");
+        if (size == 1)
         {
-            // if one of the parsed list has '3' meaning it NOT sign and we need to get result on it
-            // first and then address all the others
-            if(str.equals("3"))
+            return searchSingle(splitted[indexOfWord]);
+        }
+        else if(size  == 2 )
+        {
+            for(String str : parsed)
             {
-                ArrayList docApperance = new ArrayList();
-                String[] tmp = query.split(" ");
-                docApperance = search(tmp[indexOfWord + 1]);
-                docApperance = notOper(docApperance); // NOT Oper
-                result.put(indexOfWord + 1,docApperance);
-                parsed.remove(indexOfOper);
-                result.remove(indexOfOper);
-                query.replace("NOT","");
-                // remove the NOT from query
-                // and from the parsed
-
-                // take the word right to it , meanning we need the index of the NOT and index of 
-                // the word and add it the result Vector , the result Vector will manage the words 
-                // apper in text by DOCS. 
+                if(str.equals("4"))
+                {
+                    return searchAsItIs(splitted[indexOfWord + 1]);
+                    // qoution of the word -- need to take the Index of 4 , and the Index of the word
+                    // and add it to the Vector of result
+                    // all of the is dont before we bulid the HTML structure
+                }
             }
-            indexOfOper++;
-            indexOfWord++;
+            return searchSingle(splitted[1]);
+            // if first Token is "4"
+            // use the function searchAsItIs
         }
-        indexOfOper = 0;
-        indexOfWord = 0;
-        for(String str : parsed)
-        {
-            if(str.equals("4"))
+        else {
+            Map<Integer, ArrayList> result = new HashMap<Integer, ArrayList>();
+            int loc = 0;
+            for (String token : splitted) {
+                result.put(loc, new ArrayList());
+                loc++;
+            }
+
+            // the results will held in VECTOR of WORD -> 0 - 1 (true)
+            //                                            1 - 1 (true)
+            //                                            2 - 0 (false)
+
+            // take the first three if the third is NOT take also the forth.
+
+            // NOT then AND and then OR
+
+            int sizeofDocs = lib.docs.size();
+            indexOfOper = 0;
+            indexOfWord = 0;
+            for (String str : parsed) {
+                // if one of the parsed list has '3' meaning it NOT sign and we need to get result on it
+                // first and then address all the others
+                if (str.equals("3")) {
+                    ArrayList docApperance = new ArrayList();
+                    String[] tmp = query.split(" ");
+                    docApperance = searchDocApp(tmp[indexOfWord + 1]);
+                    docApperance = notOper(docApperance); // NOT Oper
+                    result.put(indexOfWord + 1, docApperance);
+                    parsed.remove(indexOfOper);
+                    result.remove(indexOfOper);
+                    query = query.replace("NOT ", "");
+                    // remove the NOT from query
+                    // and from the parsed
+
+                    // take the word right to it , meanning we need the index of the NOT and index of
+                    // the word and add it the result Vector , the result Vector will manage the words
+                    // apper in text by DOCS.
+                }
+                indexOfOper++;
+                indexOfWord++;
+            }
+            indexOfOper = 0;
+            indexOfWord = 0;
+            for (String str : parsed) {
+                if (str.equals("4")) {
+                    ArrayList docApperance = new ArrayList();
+                    docApperance = searchDocAppQout(splitted[indexOfWord + 1]);
+                    result.put(indexOfWord + 1, docApperance);
+                    parsed.remove(indexOfOper);
+                    result.remove(indexOfOper);
+                    query = query.replace("Quotation ", "");
+
+                    // qoution of the word -- need to take the Index of 4 , and the Index of the word
+                    // and add it to the Vector of result
+                    // all of the is dont before we bulid the HTML structure
+                }
+                indexOfOper++;
+                indexOfWord++;
+            }
+
+            indexOfWord = 0;
+            indexOfOper = 0;
+            size = parsed.size();
+            ArrayList left = new ArrayList();
+            ArrayList right = new ArrayList();
+            for (int i = 0; i < (parsed.size() % 3 ) ; i++)
             {
-                ArrayList docApperance = new ArrayList();
-                String[] tmp = query.split(" ");
-                docApperance = search(tmp[indexOfWord + 1]);
-                docApperance = notOper(docApperance);
 
-                // qoution of the word -- need to take the Index of 4 , and the Index of the word
-                // and add it to the Vector of result 
-                // all of the is dont before we bulid the HTML structure
+                if(result.get(i).size() == 0 && result.get(i+2).size() == 0) {
+                    left = searchDocApp(splitted[i]);
+                    result.put(i, left);
+                    right = searchDocApp(splitted[i + 2]);
+                    result.put(i + 2, right);
+                }
+                if(result.get(i).size() == 0)
+                {
+                    left = searchDocApp(splitted[i]);
+                    result.put(i, left);
+                }
+                if(result.get(i + 2).size() == 0)
+                {
+                    right = searchDocApp(splitted[i + 2]);
+                    result.put(i + 2, right);
+                }
+                    if(parsed.get(i + 1).equals("1"))
+                    {
+                        left = andOper(left,right);
+                        parsed.remove(i);
+                        parsed.remove(i+1);
+                        result.remove(i);
+                        result.remove(i+1);
+                        query = query.replace("AND ", "");
+                        query = query.replace(splitted[i+2].toString(), "");
+                    }
+                    else{
+
+                        left = orOper(left,right);
+                        parsed.remove(i);
+                        parsed.remove(i+1);
+                        result.remove(i);
+                        result.remove(i+1);
+                        query = query.replace("OR ", "");
+                        query = query.replace(splitted[i+2].toString(), "");
+                    }
+
+
+
+
+
+
             }
-            indexOfOper++;
-            indexOfWord++;
-        }
-        ArrayList left = new ArrayList();
-        ArrayList right = new ArrayList();
 
-        left.add(parsed.get(0));
-        right.add(parsed.get(2));
-
-        int size = parsed.size();
-        /*
-        while ( size != 0)
-        {
-
-
-        }
-        */
-        //System.out.println(parsed.get(1));
-        //System.out.println(parsed.get(2));
-        //System.out.println(parsed.get(3));
-
-        left = orOper(left,right);
+                // now the left is holding the allowed docs to search in ..
+            
 
         /*
-        for (int i=0 ; i< parsed.size() ; i++)
-        {
-            // if there is NOT Oper we will use it first on the word it is left to .. cat OR NOT dog
-            // NOT dog will be first to short it to group of three
 
-
-
-
-        }
         */
 
-        // the String that will return will hold the HTML structure includeing the required
-        // search terms
+            // the String that will return will hold the HTML structure includeing the required
+            // search terms
 
 
-        return null;
+            return "Empty";
+        }
     }
     public ArrayList orOper(ArrayList left , ArrayList right)
     {
