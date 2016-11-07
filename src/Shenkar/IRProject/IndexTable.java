@@ -273,13 +273,13 @@ public class IndexTable implements Serializable{
             int sizeofDocs = lib.docs.size();
             indexOfOper = 0;
             indexOfWord = 0;
-            for (String str : parsed) {
+            int i;
+            for (i=0  ; i < splitted.length -1 ; i++) {
                 // if one of the parsed list has '3' meaning it NOT sign and we need to get result on it
                 // first and then address all the others
-                if (str.equals("3")) {
+                if (parsed.get(i).equals("3")) {
                     ArrayList docApperance = new ArrayList();
-                    String[] tmp = query.split(" ");
-                    docApperance = searchDocApp(tmp[indexOfWord + 1]);
+                    docApperance = searchDocApp(splitted[indexOfWord + 1]);
                     docApperance = notOper(docApperance); // NOT Oper
                     result.put(indexOfWord + 1, docApperance);
                     parsed.remove(indexOfOper);
@@ -292,13 +292,8 @@ public class IndexTable implements Serializable{
                     // the word and add it the result Vector , the result Vector will manage the words
                     // apper in text by DOCS.
                 }
-                indexOfOper++;
-                indexOfWord++;
-            }
-            indexOfOper = 0;
-            indexOfWord = 0;
-            for (String str : parsed) {
-                if (str.equals("4")) {
+                if(parsed.get(i).equals("4"))
+                {
                     ArrayList docApperance = new ArrayList();
                     docApperance = searchDocAppQout(splitted[indexOfWord + 1]);
                     result.put(indexOfWord + 1, docApperance);
@@ -306,9 +301,6 @@ public class IndexTable implements Serializable{
                     result.remove(indexOfOper);
                     query = query.replace("Quotation ", "");
 
-                    // qoution of the word -- need to take the Index of 4 , and the Index of the word
-                    // and add it to the Vector of result
-                    // all of the is dont before we bulid the HTML structure
                 }
                 indexOfOper++;
                 indexOfWord++;
@@ -319,9 +311,13 @@ public class IndexTable implements Serializable{
             size = parsed.size();
             ArrayList left = new ArrayList();
             ArrayList right = new ArrayList();
-            for (int i = 0; i < (parsed.size() % 3 ) ; i++)
-            {
+            for(i = 0 ; i <  result.size() - 1 ; i++){
+                System.out.println(result.get(i).size());
+                // why cant i access the filed of result and check if it empty of not
+            }
 
+            for (i = 0; i < (parsed.size() % 3 ) ; i++)
+            {
                 if(result.get(i).size() == 0 && result.get(i+2).size() == 0) {
                     left = searchDocApp(splitted[i]);
                     result.put(i, left);
@@ -367,11 +363,9 @@ public class IndexTable implements Serializable{
             }
 
                 // now the left is holding the allowed docs to search in ..
-            
+                // loop on the words with allowed postion ( on which doc we can search)
+                // bulit the html struct and return it to gui
 
-        /*
-
-        */
 
             // the String that will return will hold the HTML structure includeing the required
             // search terms
